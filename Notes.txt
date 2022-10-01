@@ -1,0 +1,49 @@
+Sample Backend creation using Node Js, Sequelize, and MySQL 
+
+1. Basic
+
+# Install mysql client for Node Js 
+npm install mysql2
+
+# Installing Sequelize ORM 
+npm install sequelize
+
+# Sequelize automatically runs the Db and tries to connect with it
+# Model in sequelize helps us to create the table and set the data inside it for example rows and column
+# Sequelize is similar to mongoose 
+
+2. MySQL specific things - 
+
+# Check the mysql service status 
+sudo service mysql status 
+
+# Enter as a root user in mysql -> 
+sudo mysql
+
+# Command to exit the mysql -> 
+exit
+
+# Command to get the list of the user in mysql 
+Select user from mysql.user
+
+# Sample user created for this project - 
+abhishek
+123 
+
+# Command to Create a user 
+CREATE USER 'sammy'@'localhost' IDENTIFIED BY 'password';
+
+# Grant all permission to the specific user 
+grant all privileges on *.* to 'abhishek'@'localhost' with grant option;
+
+# Entering into mysql using the created user / specific user 
+mysql -u abhishek -p
+
+# Check who is the current logged user 
+select current_user;
+
+# Creating a specific Database 
+CREATE DATABASE database_name;
+
+Track 
+3 - Done
